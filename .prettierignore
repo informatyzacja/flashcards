@@ -1,0 +1,12 @@
+# Frontend files
+dist
+frontend/.next
+
+*.d.ts
+
+.gitignore
+.prettierignore
+.eslintrc.cjs
+
+pnpm-lock.yaml
+pnpm-workspace.yaml

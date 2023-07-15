@@ -1,0 +1,49 @@
+{
+  "name": "flashcards",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir frontend dev",
+    "postinstall": "husky install",
+    "build": "pnpm --dir frontend build",
+    "start": "pnpm --dir frontend start",
+    "lint": "pnpm --dir frontend lint",
+    "format:check": "prettier --ignore-unknown --check frontend/src"
+  },
+  "packageManager": "pnpm@8.6.7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/informatyzacja/flashcards.git"
+  },
+  "author": {
+    "name": "Michał Korczak",
+    "url": "https://omikor.in"
+  },
+  "maintainers": [
+    {
+      "name": "Michał Korczak",
+      "url": "https://omikor.in"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/informatyzacja/flashcards/issues"
+  },
+  "homepage": "https://github.com/informatyzacja/flashcards#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": "20.4.0"
+  },
+  "volta": {
+    "node": "20.4.0"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --ignore-unknown --write"
+    ],
+    "*.{js,jsx,ts,tsx,graphql,gql}": "eslint --ext .js,.jsx,.ts,.tsx,.graphql,.gql "
+  }
+}

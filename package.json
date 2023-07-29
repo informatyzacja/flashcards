@@ -10,20 +10,21 @@
     "lint": "pnpm --dir frontend lint",
     "format:check": "prettier --ignore-unknown --check frontend/src"
   },
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@8.6.10",
+  "engines": {
+    "node": "^20"
+  },
+  "volta": {
+    "node": "20.5.0",
+    "pnpm": "8.6.10"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/informatyzacja/flashcards.git"
   },
-  "author": {
-    "name": "Michał Korczak",
-    "url": "https://omikor.in"
-  },
+  "author": "Michał Korczak (https://omikor.in)",
   "maintainers": [
-    {
-      "name": "Michał Korczak",
-      "url": "https://omikor.in"
-    }
+    "Michał Korczak (https://omikor.in)"
   ],
   "license": "ISC",
   "bugs": {
@@ -33,12 +34,6 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "prettier": "^3.0.0"
-  },
-  "engines": {
-    "node": "20.4.0"
-  },
-  "volta": {
-    "node": "20.4.0"
   },
   "lint-staged": {
     "*": [

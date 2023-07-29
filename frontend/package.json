@@ -1,7 +1,7 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,25 +9,31 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "packageManager": "pnpm@8.6.10",
+  "engines": {
+    "node": "^20"
+  },
+  "volta": {
+    "node": "20.5.0",
+    "pnpm": "8.6.10"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/informatyzacja/flashcards.git"
   },
-  "author": {
-    "name": "Michał Korczak",
-    "url": "https://omikor.in"
-  },
+  "author": "Michał Korczak (https://omikor.in)",
   "maintainers": [
-    {
-      "name": "Michał Korczak",
-      "url": "https://omikor.in"
-    }
+    "Michał Korczak (https://omikor.in)"
   ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/informatyzacja/flashcards/issues"
   },
   "homepage": "https://github.com/informatyzacja/flashcards#readme",
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.7.1",
@@ -49,12 +55,5 @@
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.45.0",
     "typescript": "^5.1.6"
-  },
-  "engines": {
-    "node": "^20"
-  },
-  "volta": {
-    "node": "20.4.0",
-    "pnpm": "8.6.10"
   }
 }

@@ -3,7 +3,6 @@ module.exports = {
     '@alergeek-ventures/eslint-config/typescript',
     '@alergeek-ventures/eslint-config/react',
     '@alergeek-ventures/eslint-config/tests',
-    '@alergeek-ventures/eslint-config/cspell-eslint',
     'plugin:@next/next/recommended',
   ],
   parser: '@typescript-eslint/parser',

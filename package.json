@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm --dir frontend dev",
-    "postinstall": "husky install",
     "build": "pnpm --dir frontend build",
-    "start": "pnpm --dir frontend start",
+    "dev": "pnpm --dir frontend dev",
+    "format": "prettier --ignore-unknown --write frontend/src",
+    "format:check": "prettier --ignore-unknown --check frontend/src",
     "lint": "pnpm --dir frontend lint",
-    "format:check": "prettier --ignore-unknown --check frontend/src"
+    "postinstall": "husky install",
+    "start": "pnpm --dir frontend start"
   },
   "packageManager": "pnpm@8.6.10",
   "engines": {

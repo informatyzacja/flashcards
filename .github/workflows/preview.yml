@@ -7,8 +7,6 @@ on:
 jobs:
   check-comment:
     runs-on: ubuntu-latest
-    env:
-      NODE_ENV: production
     steps:
       - name: Generate token
         id: generate_token
@@ -90,7 +88,7 @@ jobs:
 
       - name: Build
         if: steps.check.outputs.triggered == 'true'
-        run: pnpm build
+        run: NODE_ENV=production pnpm build
 
       - name: Start
         if: steps.check.outputs.triggered == 'true'

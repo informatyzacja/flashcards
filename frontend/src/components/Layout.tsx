@@ -18,15 +18,14 @@ const lato = Lato({
 export default function Layout({ children }: LayoutProps) {
   return (
     <VStack minH="100vh" spacing={8} className={lato.variable}>
+      <Navbar />
       <Container
         maxW="container.full"
-        padding={0}
         flex={1}
         display="flex"
         flexDir="column"
       >
         <chakra.main>
-          <Navbar />
           {children}
         </chakra.main>
       </Container>

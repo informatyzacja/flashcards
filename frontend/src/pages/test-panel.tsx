@@ -1,7 +1,5 @@
-import TestPanelNavbar from "@/components/TestPanelNavbar";
+import TestPanelNavbar from '@/components/TestPanelNavbar';
 
 export default function TestPanel() {
-  return (
-    <TestPanelNavbar/>
-  );
+  return <TestPanelNavbar />;
 }

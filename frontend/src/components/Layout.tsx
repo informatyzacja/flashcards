@@ -19,15 +19,8 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <VStack minH="100vh" spacing={8} className={lato.variable}>
       <Navbar />
-      <Container
-        maxW="container.full"
-        flex={1}
-        display="flex"
-        flexDir="column"
-      >
-        <chakra.main>
-          {children}
-        </chakra.main>
+      <Container maxW="container.full" flex={1} display="flex" flexDir="column">
+        <chakra.main>{children}</chakra.main>
       </Container>
     </VStack>
   );

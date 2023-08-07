@@ -41,8 +41,5 @@
       "prettier --ignore-unknown --write"
     ],
     "*.{js,jsx,ts,tsx,graphql,gql}": "eslint --ext .js,.jsx,.ts,.tsx,.graphql,.gql "
-  },
-  "dependencies": {
-    "next": "^13.4.12"
   }
 }

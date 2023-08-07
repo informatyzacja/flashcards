@@ -2,6 +2,8 @@ import { chakra, Container, VStack } from '@chakra-ui/react';
 import { Lato } from 'next/font/google';
 import type React from 'react';
 
+import Navbar from '@/components/Navbar';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -16,7 +18,8 @@ const lato = Lato({
 export default function Layout({ children }: LayoutProps) {
   return (
     <VStack minH="100vh" spacing={8} className={lato.variable}>
-      <Container maxW="container.xl" flex={1} display="flex" flexDir="column">
+      <Navbar />
+      <Container maxW="container.full" flex={1} display="flex" flexDir="column">
         <chakra.main>{children}</chakra.main>
       </Container>
     </VStack>

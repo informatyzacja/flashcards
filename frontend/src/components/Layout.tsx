@@ -2,7 +2,7 @@ import { chakra, Container, VStack } from '@chakra-ui/react';
 import { Lato } from 'next/font/google';
 import type React from 'react';
 
-import Navbar from './Navbar';
+import Navbar from '@/components/Navbar';
 
 interface LayoutProps {
   children: React.ReactNode;

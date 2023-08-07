@@ -8,7 +8,6 @@ export default function Home() {
           w="416px"
           h="407px"
           mt="90px"
-          ml=""
           bgGradient="linear(111.27deg, rgba(136, 56, 255, 0.1) 32.04%, rgba(91, 219, 255, 0.1) 79.8%)"
           borderRadius="15px"
           border="3px"

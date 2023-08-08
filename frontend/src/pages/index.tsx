@@ -2,11 +2,10 @@ import { Center, Flex, Stack, Text } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <Flex>
+    <Flex gap="100">
       <Center
         w="416px"
         h="407px"
-        mt="90px"
         bgGradient="linear(111.27deg, rgba(136, 56, 255, 0.1) 32.04%, rgba(91, 219, 255, 0.1) 79.8%)"
         borderRadius="15px"
         border="3px"
@@ -26,7 +25,7 @@ export default function Home() {
         </Flex>
       </Center>
 
-      <Stack direction="column" w="362px" h="114px" mt="158px" ml="70px">
+      <Stack direction="column" w="362px" h="114px" gap="25" mt="50px">
         <Text
           fontSize="24px"
           fontWeight="400"
@@ -40,7 +39,6 @@ export default function Home() {
           fontWeight="400"
           lineHeight="19.2px"
           color="#575757"
-          justifyContent="justified"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

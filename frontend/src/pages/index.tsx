@@ -1,29 +1,30 @@
-import { Center, Flex, Stack, Text } from '@chakra-ui/react';
+import { Flex, Stack, Text } from '@chakra-ui/react';
+import React from 'react';
+
+import { DropZone } from '@/components/Dropzone';
+import { FileList } from '@/components/FileList';
 
 export default function Home() {
+  const [isDropActive, setIsDropActive] = React.useState(false);
+
+  const [files, setFiles] = React.useState<File[]>([]);
+
+  const onDragStateChange = React.useCallback((dragActive: boolean) => {
+    setIsDropActive(dragActive);
+  }, []);
+
+  const onFilesDrop = React.useCallback((myFiles: File[]) => {
+    setFiles(myFiles);
+  }, []);
+
   return (
     <Flex gap="100">
-      <Center
-        w="416px"
-        h="407px"
-        bgGradient="linear(111.27deg, rgba(136, 56, 255, 0.1) 32.04%, rgba(91, 219, 255, 0.1) 79.8%)"
-        borderRadius="15px"
-        border="3px"
-        borderStyle="dashed"
-        borderColor="#6510E3"
-      >
-        <Flex w="169px" h="72px">
-          <Text
-            fontSize="20px"
-            fontWeight="400"
-            lineHeight="24px"
-            color="#006DCEE5"
-            align="center"
-          >
-            Upuść pliki tutaj lub kliknij by otworzyć folder
-          </Text>
-        </Flex>
-      </Center>
+      <FileList files={files} />
+
+      <DropZone
+        onDragStateChange={onDragStateChange}
+        onFilesDrop={onFilesDrop}
+      />
 
       <Stack direction="column" w="362px" h="114px" gap="25" mt="50px">
         <Text

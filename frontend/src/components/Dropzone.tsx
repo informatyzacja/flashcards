@@ -1,6 +1,6 @@
 //reference: https://blog.alexdevero.com/react-file-dropzone/
 
-import { Center, Flex, Text } from '@chakra-ui/react';
+import { Center, Flex, Input, Text } from '@chakra-ui/react';
 import React from 'react';
 
 export interface DropZoneProps {
@@ -132,7 +132,10 @@ export const DropZone = React.memo(
             color="#006DCEE5"
             align="center"
           >
-            Upuść pliki tutaj lub kliknij by otworzyć folder
+            <label htmlFor="file-upload">
+              <Input id="file-upload" type="file" display="none" /> Upuść pliki
+              tutaj lub kliknij by otworzyć folder
+            </label>
           </Text>
         </Flex>
       </Center>

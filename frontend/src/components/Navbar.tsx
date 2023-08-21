@@ -1,6 +1,7 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import Link from 'next/link';
 
-export default function Nav() {
+const Navbar = () => {
   return (
     <Box
       w="100%"
@@ -8,11 +9,15 @@ export default function Nav() {
       px={10}
       boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
     >
-      <Flex h="60px" alignItems="center" justifyContent="space-between">
-        <Text fontSize="40px" as="b" color="white">
-          fiszki
-        </Text>
+      <Flex minH={14} alignItems="center" justifyContent="space-between">
+        <Link href="/">
+          <Heading as="h1" color="white">
+            fiszki
+          </Heading>
+        </Link>
       </Flex>
     </Box>
   );
-}
+};
+
+export default Navbar;

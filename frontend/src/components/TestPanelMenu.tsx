@@ -3,7 +3,7 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 import { ProgressWithDescription } from '@/components/ProgressWithDescription';
 import { SvgIcon } from '@/components/SvgIcon';
 
-export default function TestPanelNavbar() {
+export default function TestPanelMenu() {
   return (
     <Box
       display="flex"

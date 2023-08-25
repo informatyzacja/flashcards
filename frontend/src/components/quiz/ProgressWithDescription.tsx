@@ -1,4 +1,4 @@
-import { Box, Progress, Text } from '@chakra-ui/react';
+import { Flex, Progress, Text } from '@chakra-ui/react';
 
 interface ProgressWithDescriptionProps {
   description: string;
@@ -14,27 +14,24 @@ export const ProgressWithDescription = ({
   value,
 }: ProgressWithDescriptionProps) => {
   return (
-    <Box marginBottom={12}>
+    <Flex direction="column" justifyContent="center" gap={2}>
       <Progress
         value={value}
-        w="195px"
-        h="7px"
-        borderRadius="10px"
+        maxW="md"
+        minW="2xs"
+        w="100%"
+        h={{ base: 2, md: 3 }}
+        borderRadius="lg"
         bg={bg}
         colorScheme={colorScheme}
       />
 
       <Text
-        marginTop={1}
-        color="#313131"
         textAlign="center"
-        fontSize="14px"
-        fontStyle="normal"
-        fontWeight="400"
-        lineHeight="normal"
+        fontSize={{ base: 'xs', md: 'sm' }}
       >
         {description}
       </Text>
-    </Box>
+    </Flex>
   );
 };

@@ -1,52 +1,52 @@
-import { Center, Flex, Stack, Text } from '@chakra-ui/react';
+import { Flex, Heading, Text } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <Flex gap="100">
-      <Center
-        w="416px"
-        h="407px"
+    <Flex
+      flexDirection={{ base: 'column-reverse', lg: 'row' }}
+      gap={16}
+      py={8}
+      px={4}
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Flex
+        w={{ base: 'xs', lg: 'sm' }}
+        h={{ base: 'xs', lg: 'sm' }}
         bgGradient="linear(111.27deg, rgba(136, 56, 255, 0.1) 32.04%, rgba(91, 219, 255, 0.1) 79.8%)"
-        borderRadius="15px"
+        borderRadius="2xl"
         border="3px"
         borderStyle="dashed"
         borderColor="#6510E3"
+        justifyContent="center"
+        alignItems="center"
       >
-        <Flex w="169px" h="72px">
-          <Text
-            fontSize="20px"
-            fontWeight="400"
-            lineHeight="24px"
-            color="#006DCEE5"
-            align="center"
-          >
-            Upuść pliki tutaj lub kliknij by otworzyć folder
-          </Text>
-        </Flex>
-      </Center>
-
-      <Stack direction="column" w="362px" h="114px" gap="25" mt="50px">
         <Text
-          fontSize="24px"
-          fontWeight="400"
-          lineHeight="28.8px"
-          color="#6510E3"
+          px={16}
+          textAlign="center"
         >
-          Czym są fiszki?
+          Upuść pliki tutaj lub kliknij by otworzyć folder
         </Text>
-        <Text
-          fontSize="16px"
-          fontWeight="400"
-          lineHeight="19.2px"
-          color="#575757"
+      </Flex>
+      <Flex
+        flexDirection="column"
+        maxW="md"
+        width="100%"
+        height="100%"
+      >
+        <Heading
+          fontSize="2xl"
         >
+          Czym są fiszki
+        </Heading>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in cillum
           dolore eu fugiat nulla pariatur.
         </Text>
-      </Stack>
+      </Flex>
     </Flex>
   );
 }

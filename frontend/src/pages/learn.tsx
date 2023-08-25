@@ -1,4 +1,4 @@
-import Quiz from '@/components/Quiz';
+import Quiz from '@/components/quiz/Quiz';
 
 export default function TestPanel() {
   return <Quiz />;

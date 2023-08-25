@@ -26,10 +26,7 @@ export const ProgressWithDescription = ({
         colorScheme={colorScheme}
       />
 
-      <Text
-        textAlign="center"
-        fontSize={{ base: 'xs', md: 'sm' }}
-      >
+      <Text textAlign="center" fontSize={{ base: 'xs', md: 'sm' }}>
         {description}
       </Text>
     </Flex>

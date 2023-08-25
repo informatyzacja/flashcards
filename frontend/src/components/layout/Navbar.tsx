@@ -10,10 +10,7 @@ const Navbar = () => {
       bg="#2397FF"
       boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
     >
-      <Flex
-        alignItems="center"
-        justifyContent="space-between"
-      >
+      <Flex alignItems="center" justifyContent="space-between">
         <Link href="/">
           <Heading color="white" fontSize="2xl">
             fiszki

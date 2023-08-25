@@ -18,7 +18,7 @@ const lato = Lato({
 export default function Layout({ children }: LayoutProps) {
   return (
     <VStack minH="100vh" className={lato.variable} gap={0}>
-      <Navbar/>
+      <Navbar />
       <Container
         minW="100vw"
         flex={1}

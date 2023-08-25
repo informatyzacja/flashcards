@@ -10,12 +10,10 @@ export const AnswerButton = ({ text }: { text: string }) => {
       h="fit-content"
       whiteSpace="normal"
     >
-      <Text>
-        {text}
-      </Text>
+      <Text>{text}</Text>
     </Button>
-  )
-}
+  );
+};
 
 export default function TestPanelQuestions() {
   return (
@@ -40,7 +38,13 @@ export default function TestPanelQuestions() {
         alignItems="center"
         gap={{ base: 4, md: 8 }}
       >
-        {["odpowiedz 1", "odpowiedz 2", "odpowiedz 3", "odpowiedz 4", "odpowiedz 5"].map((ans) => (
+        {[
+          'odpowiedz 1',
+          'odpowiedz 2',
+          'odpowiedz 3',
+          'odpowiedz 4',
+          'odpowiedz 5',
+        ].map((ans) => (
           <AnswerButton text={ans} key={ans} />
         ))}
       </Flex>

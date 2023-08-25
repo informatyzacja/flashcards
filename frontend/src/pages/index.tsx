@@ -21,24 +21,12 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
       >
-        <Text
-          px={16}
-          textAlign="center"
-        >
+        <Text px={16} textAlign="center">
           Upuść pliki tutaj lub kliknij by otworzyć folder
         </Text>
       </Flex>
-      <Flex
-        flexDirection="column"
-        maxW="md"
-        width="100%"
-        height="100%"
-      >
-        <Heading
-          fontSize="2xl"
-        >
-          Czym są fiszki
-        </Heading>
+      <Flex flexDirection="column" maxW="md" width="100%" height="100%">
+        <Heading fontSize="2xl">Czym są fiszki</Heading>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

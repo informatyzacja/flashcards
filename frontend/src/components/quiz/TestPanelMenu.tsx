@@ -19,7 +19,7 @@ export default function TestPanelMenu() {
       py={{ base: 2, md: 8 }}
     >
       <Flex direction="column" justifyContent="space-around" alignItems="center">
-        <Text fontSize={{ base: '2xl', md: '4xl' }} fontWeight="900">00:00:34</Text>
+        <Text fontSize={{ base: '2xl', sm: '4xl' }} fontWeight="900">00:00:34</Text>
         <Flex direction="column" gap={{ base: 2, md: 8 }}>
           <ProgressWithDescription
             description="Opanowane pytania: 123/456"

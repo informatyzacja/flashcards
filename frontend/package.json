@@ -41,20 +41,20 @@
     "@chakra-ui/system": "^2.6.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "framer-motion": "^10.15.0",
-    "jotai": "^2.2.2",
-    "next": "^13.4.12",
+    "framer-motion": "^10.16.2",
+    "jotai": "^2.4.1",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1"
   },
   "devDependencies": {
     "@alergeek-ventures/eslint-config": "^6.0.9",
-    "@next/eslint-plugin-next": "^13.4.12",
-    "@types/node": "^20.4.5",
-    "@types/react": "^18.2.17",
+    "@next/eslint-plugin-next": "^13.4.19",
+    "@types/node": "^20.5.8",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "eslint": "^8.46.0",
-    "typescript": "^5.1.6"
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2"
   }
 }

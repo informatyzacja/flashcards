@@ -41,5 +41,8 @@
       "prettier --ignore-unknown --write"
     ],
     "*.{js,jsx,ts,tsx,graphql,gql}": "eslint --ext .js,.jsx,.ts,.tsx,.graphql,.gql "
+  },
+  "dependencies": {
+    "react-dropzone": "^14.2.3"
   }
 }

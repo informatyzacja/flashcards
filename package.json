@@ -33,9 +33,11 @@
   },
   "homepage": "https://github.com/informatyzacja/flashcards#readme",
   "devDependencies": {
+    "@omikorin/prettier-config": "^1.0.0",
     "husky": "^8.0.3",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.3"
   },
+  "prettier": "@omikorin/prettier-config",
   "lint-staged": {
     "*": [
       "prettier --ignore-unknown --write"

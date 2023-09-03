@@ -27,6 +27,11 @@ jobs:
 
       - name: Cache build
         uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Format check
         run: pnpm format:check
@@ -54,6 +59,11 @@ jobs:
 
       - name: Cache build
         uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Setup env
         run: echo "NODE_ENV=production" >> "$GITHUB_ENV"

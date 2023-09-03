@@ -49,5 +49,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Setup env
+        run: echo "NODE_ENV=production" >> "$GITHUB_ENV"
+
       - name: Build
         run: pnpm build

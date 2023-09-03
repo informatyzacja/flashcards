@@ -52,14 +52,6 @@ jobs:
       - name: Install deps
         run: pnpm install
 
-      - name: Cache build
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
       - name: Add info about build
         uses: marocchino/sticky-pull-request-comment@v2
         with:
